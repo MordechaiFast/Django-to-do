@@ -4,7 +4,7 @@ Only works by running in the Django shell"""
 import json
 from pathlib import Path
 
-file_name = Path(input("Enter json To-do list path"))
+file_name = Path(input("Enter json To-do list path: "))
 with open(file_name) as file:
     db = json.load(file)
 
